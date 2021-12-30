@@ -10,13 +10,17 @@ class FragTrap : virtual public ClapTrap
 {
 	public :
 
-	FragTrap(std::string name);
-	~FragTrap(void);
-    FragTrap( FragTrap const & copy);
-    FragTrap & operator=( FragTrap const & a);
+		FragTrap(std::string name);
+		~FragTrap(void);
+    	FragTrap( FragTrap const & copy);
+    	FragTrap & operator=( FragTrap const & a);
 
-	void    highFivesGuys(void);
-	void	attack(std::string const & target);
+		void    highFivesGuys(void);
+		void	attack(std::string const & target);
+
+	protected :
+
+		FragTrap(void);
 };
 
 #endif

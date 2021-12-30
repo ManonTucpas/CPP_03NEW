@@ -32,7 +32,7 @@ DiamondTrap & DiamondTrap::operator=( DiamondTrap const & a)
     return *this;
 }
 
-DiamondTrap::DiamondTrap( DiamondTrap const & copy ) : ClapTrap()
+DiamondTrap::DiamondTrap( DiamondTrap const & copy ) : ClapTrap(), FragTrap(), ScavTrap()
 {
     *this = copy;
     std::cout << "DiamondTrap: " << getName() << " has been copied" << std::endl;

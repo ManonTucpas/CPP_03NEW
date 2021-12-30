@@ -17,6 +17,15 @@ FragTrap::~FragTrap(void)
 	return ;
 }
 
+FragTrap::FragTrap(void)
+{
+	FragTrap::_hitPoints = 100;
+	FragTrap::_energyPoints = 100;
+	FragTrap::_attackDamage = 30;
+	std::cout << "FragTrap unamed constructed" << std::endl;
+	return ;
+}
+
 FragTrap & FragTrap::operator=( FragTrap const & a)
 {
     std::cout << "FragTrap: Assignation operator called: " << getName() << " is now " << a.getName() << std::endl;

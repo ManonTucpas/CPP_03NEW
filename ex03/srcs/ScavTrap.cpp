@@ -18,6 +18,15 @@ ScavTrap::~ScavTrap(void)
 	return ;
 }
 
+ScavTrap::ScavTrap(void)
+{
+    ScavTrap::_hitPoints = 100;
+    ScavTrap::_energyPoints = 50;
+    ScavTrap::_attackDamage = 20;
+	std::cout << "ScavTrap unamed has been constructed" << std::endl;
+	return ;
+}
+
 ScavTrap & ScavTrap::operator=( ScavTrap const & a)
 {
     std::cout << "ScavTrap: Assignation operator called: " << getName() << " is now " << a.getName() << std::endl;
